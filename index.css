@@ -1,28 +1,28 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url("./assets/Montserrat.ttf");
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat.ttf');
 }
 
 @font-face {
-  font-family: "Lato";
-  src: url("./assets/Lato-Thin.ttf");
+  font-family: 'Lato';
+  src: url('./assets/Lato-Thin.ttf');
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "Lato";
-  src: url("./assets/Lato-Light.ttf");
+  font-family: 'Lato';
+  src: url('./assets/Lato-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Lato";
-  src: url("./assets/Lato-Regular.ttf");
+  font-family: 'Lato';
+  src: url('./assets/Lato-Regular.ttf');
   font-weight: 500;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("./assets/Lato-Bold.ttf");
+  font-family: 'Lato';
+  src: url('./assets/Lato-Bold.ttf');
   font-weight: 700;
 }
 
@@ -35,7 +35,7 @@
 }
 
 body {
-  font-family: "Lato";
+  font-family: 'Lato';
   color: #d2dcee;
   background: linear-gradient(#0a1529, #132547);
 }
@@ -47,7 +47,7 @@ section {
 button {
   outline: none;
   border: none;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 button:hover {
@@ -55,12 +55,12 @@ button:hover {
 }
 
 .header {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   margin-bottom: 16px;
 }
 
 .call-to-action__header {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -75,7 +75,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   position: relative;
   z-index: 50;
 }
@@ -111,6 +111,8 @@ button:hover {
   font-size: 36px;
   text-shadow: 0px 0px 20px #000;
   font-weight: 600;
+  position: relative;
+  z-index: 20
 }
 
 .hero-section__subheader {
@@ -118,6 +120,8 @@ button:hover {
   font-weight: 400;
   color: #c1d0ec;
   text-shadow: 0px 0px 20px #000;
+  position: relative;
+  z-index: 20
 }
 
 .hero-section__button,
@@ -130,6 +134,8 @@ button:hover {
   border-radius: 12px;
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 2px 4px #0a152970, inset 0px 3px 4px #6bff9d;
+  position: relative;
+  z-index: 20;
 }
 
 .hero-section__button:hover,
@@ -180,7 +186,7 @@ button:hover {
 
 .item__name {
   position: relative;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 500;
 }
@@ -189,7 +195,7 @@ button:hover {
 }
 
 .item__name:before {
-  content: "";
+  content: '';
   width: 14px;
   height: 14px;
   background-color: #14ff63;
@@ -209,7 +215,7 @@ button:hover {
 .item--testimonial__quote:before,
 .item--testimonial__quote:after {
   font-style: oblique;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-size: 18px;
   font-weight: 600;
   content: "'";
@@ -246,4 +252,14 @@ button:hover {
 
 .call-to-action__button {
   width: max-content;
+}
+
+.decoration {
+  width: 4px;
+  height: 4px;
+  background-color: #C1D0ECaa;
+  box-shadow: 0px 0px 10px #C1D0EC;
+  position: absolute;
+  z-index: 10;
+  border-radius: 100%;
 }
