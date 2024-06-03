@@ -25,6 +25,8 @@ export default class Sparkles {
   }
 
   _startAnimationLoop(elementClass) {
+    gsap.from(elementClass, { opacity: 0, duration: 2 });
+
     const animation = () =>
       gsap
         .to(elementClass, {
