@@ -197,10 +197,14 @@ body {
   position: relative;
   display: flex;
   width: 200vw;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: transparent;
-  margin-top: 8px;
-  gap: 30px;
+}
+
+.scroll-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-top: 24px;
 }
 
 .testimonials {
@@ -210,8 +214,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 64px;
-  margin: 0 24px;
+  gap: 40px;
 }
 
 .testimonials__header {
@@ -239,8 +242,10 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 12px;
-  font-weight: 400;
+  font-weight: 100;
+  font-family: 'Lato';
   font-size: 16px;
+  color: #c1d0ec;
 }
 
 .testimonials__testimonial--right {
