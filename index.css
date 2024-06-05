@@ -209,10 +209,11 @@ body {
 
 .testimonials {
   height: 100vh;
+  padding-top: 16px;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 40px;
 }
@@ -271,7 +272,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 32px;
   width: 100vw;
   height: 100%;
 }
