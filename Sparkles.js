@@ -55,16 +55,20 @@ class Sparkle {
 
 export default class Sparkles {
   constructor(quantity, parentElement) {
-    this._sparklesList = this._createSparkles(quantity, parentElement);
     this._parentElement = parentElement;
+    this._quantity = quantity;
+    this._sparklesList = this._createSparkles();
 
     this._pauseWhenNotInView();
   }
 
-  _createSparkles(quantity, parentElement) {
-    return new Array(quantity)
-      .fill()
-      .map(slot => (slot = new Sparkle(parentElement)));
+  _createSparkles() {
+    const array = new Array(this._quantity).fill();
+    for (let i = 0; i < array.length; i++) {
+      setTimeout(() => {
+        array[i] = new Sparkle(this._parentElement);
+      }, 0);
+    }
   }
 
   _pauseWhenNotInView() {
