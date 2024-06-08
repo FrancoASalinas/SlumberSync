@@ -1,13 +1,15 @@
+import gsap from 'gsap';
 import Sparkles from './Sparkles.js';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const heroSection = document.getElementsByClassName(
   'hero-section__image-container'
 )[0];
 
-gsap.registerPlugin(ScrollTrigger);
-
 document.addEventListener('readystatechange', () => {
   if (document.readyState === 'complete') {
+    gsap.registerPlugin(ScrollTrigger);
+
     new Sparkles(10, heroSection);
 
     scrollAnimation();

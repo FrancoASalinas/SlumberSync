@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('./assets/Montserrat.ttf');
+  font-display: swap;
 }
 
 @font-face {

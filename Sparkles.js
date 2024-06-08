@@ -1,3 +1,5 @@
+import gsap from 'gsap';
+
 class Sparkle {
   constructor(parentElement) {
     this._element = this._createElement(parentElement);
@@ -16,10 +18,12 @@ class Sparkle {
   }
 
   _setInitialPosition() {
-    gsap.set(this._element, {
-      top: 'random(0, 100)%',
-      left: 'random(0, 100)%',
-    });
+    setTimeout(() => {
+      gsap.set(this._element, {
+        top: 'random(0, 100)%',
+        left: 'random(0, 100)%',
+      });
+    }, 0);
   }
 
   _from() {
@@ -69,6 +73,8 @@ export default class Sparkles {
         array[i] = new Sparkle(this._parentElement);
       }, 0);
     }
+
+    return array;
   }
 
   _pauseWhenNotInView() {
